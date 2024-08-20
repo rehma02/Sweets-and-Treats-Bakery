@@ -1,0 +1,366 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    padding: 0;
+    background-color: rgb(229, 161, 229);
+    overflow-x: hidden;
+    
+    
+    
+}
+.navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(240, 164, 206), white);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+    position: fixed;
+    
+}
+.nav-content {
+    display: block;
+    justify-content: center;
+    padding: 14px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav-content:hover{
+    opacity: 0.5s;
+    text-decoration: underline;
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.title-section{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('images/bakery.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.title{
+    color:rgb(245, 25, 117);
+    font-size: 80px;
+    font-weight: 800px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin:0;
+    margin-bottom:70px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:45%;
+    position: relative;
+    width:100%;
+    
+
+    
+}
+.title:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+    transition: all 1s ease;
+}
+
+.container{
+    width:100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 50px;
+    
+    
+    
+
+}
+.about{
+    width: 100%;
+    padding:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    min-width: 100%;
+    flex-direction: row;
+    display: inline-block;
+    
+
+}
+.story{
+    text-align: center;
+    min-width: 100%;
+    font-size:50px;
+    margin-bottom:0;
+}
+
+
+.text-container{
+    margin-left: 0;
+    vertical-align: top;
+    border-radius: 15px;
+    font-style: italic;
+    width:100%;
+    display: flex;
+    
+    
+    
+}
+.section-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+.accordion{
+    background-color: rgb(241, 125, 209);
+    color: white;
+    cursor:pointer;
+    padding:15px;
+    border:none;
+    border-radius: 20px;
+    font-weight: 700;
+    width: 100%;
+    font-size: medium;
+    text-align: left;
+    display: flex;
+    
+}
+.active, .accordion:hover{
+    background-color: white;
+    color:rgb(241, 125, 209);
+    transition: 0.5s;
+    border-color: rgb(241, 125, 209);
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.classics{
+    font-size: 50px;
+    margin-top:0;
+}
+.items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    position: relative;
+
+}
+
+.card{
+    background: linear-gradient(90deg, rgb(233, 16, 189), white);
+    width: 300px;
+    height: 430px;
+    margin: 10px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    position: relative;
+    perspective: 1000px;
+    padding:10px;
+}
+.card-image{
+    height: 300px;
+    position: center;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+    
+
+
+}
+.card-inner{
+    position:relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor:pointer;
+    border-radius: 15px;
+    
+}
+
+.card-front{
+    background: linear-gradient(90deg, rgb(233, 16, 189), white);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.card:hover{
+    transform:scale(1.03);
+    transition:all 1s ease;
+    box-shadow: 10px 5px 10px rgb(97, 96, 96);
+}
+.card .card-inner.flipped {
+    transform: rotateY(180deg);
+}
+.item-1{
+    background-image: url('images/creme_brulee.png');
+}
+.item-2{
+    background-image: url('images/choc-croissant.jpg');
+}
+.item-3{
+    background-image: url('images/puff_pastry.jpg');
+}
+.item-4{
+    background-image: url('images/apple-pie.jpg');
+}
+.card h2{
+    padding: 5px;
+}
+.card p{
+    font-size: 18px;
+    font-weight:500;
+    
+    
+}
+.card-back{
+    background: linear-gradient(90deg, rgb(233, 16, 189), white);
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button{
+    background-color: rgb(246, 14, 114);
+    font-weight: 600;
+    font-family: Tahoma,serif;
+    border-radius: 15px;
+    height:30px;
+    border: none; 
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    
+
+}
+
+.card-panel{
+    padding: 10px 18px;
+    background-color: white;
+    border-radius: 15px;
+    width: 200px;
+    margin: 15px;
+    margin-left: 30px;
+    text-align: left;
+    
+
+}
+
+.contact-container{
+    width:100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: rgb(138, 91, 91);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+.contact-table{
+    th{
+        font-size:25px;
+        text-decoration: underline;
+        width:50%;
+    }
+    td{
+        font-size: 18px;
+        padding:5px;
+        width:50%;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .title-section {
+        height: 500px;
+        justify-content: center;
+        
+    }
+
+    .title {
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin:0;
+    }
+    .story{
+        font-size: 45px;
+    }
+    .classics{
+        font-size: 45px;
+    }
+    }
+    
+@media (max-width:480px){
+    .title-section{
+        height:500px;
+        justify-content: center;
+        
+    }
+    .title {
+        height: 200px;
+        font-size: 50px;
+        justify-content: center;
+        margin:0;
+        
+        
+    }
+    .story{
+        font-size: 40px;
+    }
+    .contact-container {
+        padding: 10px;
+        align-items: center;
+    }
+    .contact-table{
+        th{
+            font-size:20px;
+            width: 50%;
+        }
+        td{
+            font-size: 15px;
+            width:50%;
+        }
+    }
+}

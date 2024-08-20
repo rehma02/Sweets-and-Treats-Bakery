@@ -1,0 +1,214 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(240, 170, 203);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+    .navbar{
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, rgb(240, 164, 206), white);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: Tahoma, serif;
+        z-index: 1000;
+        position: fixed;
+        
+        
+    }
+    .nav-content {
+        display: block;
+        justify-content: center;
+        padding: 14px 16px;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+    .nav-content:hover{
+        opacity: 0.5s;
+        text-decoration: underline;
+        transition: 0.5s;
+        color: white;
+        
+    }
+    .section1{
+        height:600px;
+        width:100%;
+        background-image: url("images/assorted-pastries.avif");
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        min-height:100%;
+        justify-content: center;
+        
+    }
+    h1{
+        color: rgb(245, 3, 156);
+        font-size: 100px;
+        text-align: center;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 80px;
+        margin-right:80px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    h1:hover{
+        transform: scale(1.03);
+        transition: all 1s ease;
+        cursor:pointer;
+    }
+    .section2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .pastries{
+        width:100%;
+        text-align: center;
+        font-size: 50px;
+        color:rgb(86, 59, 59);
+        margin:20px;
+        
+    }
+    .menu-cards{
+        background: linear-gradient(90deg, rgb(237, 64, 165), white);
+        width: 300px;
+        height: 430px;
+        margin: 10px;
+        border-radius: 15px;
+        backface-visibility: hidden;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding:10px;
+    }
+
+    .card-image{
+        height: 300px;
+        background-position: center;
+        margin-bottom: 10px;
+        background-size: cover;
+        border-radius: 15px;
+        width: 100%;    
+    }
+
+    .menu-cards h2{
+        margin:0;
+        padding:0;
+        width:100%;
+        text-align: center;   
+    }
+
+    .menu-cards p{
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .menu-cards:hover{
+        transform: scale(1.03);
+        transition: all 1s ease;
+        cursor: pointer;
+        box-shadow: 10px 5px 10px rgb(97, 96, 96);
+    }
+    .choc-croissant{
+        background-image: url("images/choc-croissant.jpg");
+    }
+    .danish-pastry{
+        background-image: url("images/danish-pastry.jpg");
+    }
+    .baklava{
+        background-image: url("images/baklava.jpg");
+    }
+    .apple-strudel{
+        background-image: url("images/apple-strudel.webp");
+    }
+    .eclair{
+        background-image: url("images/eclair.jpg");
+    }
+    .lemon-tart{
+        background-image: url("images/lemon-tart.jpg");
+    }
+    .apple-pie{
+        background-image: url("images/apple-pie.jpg");
+    }
+    .cannoli{
+        background-image: url("images/cannoli.jpg");
+    }
+    .contact-container{
+        width:100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        overflow: hidden;
+        background-color: rgb(138, 91, 91);
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    table{
+        th{
+            font-size:25px;
+            text-decoration: underline;
+            width:50%;
+        }
+        td{
+            font-size: 18px;
+            padding:5px;
+            width:50%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        h1{
+            font-size:80px;
+        }
+        .cookies{
+            font-size:40px;
+            margin:15px;
+                    }
+        }
+        
+    @media screen and (max-width: 480px) {
+        h1{
+            font-size:80px;
+        }
+        .nav-content{
+            font-size:15px;
+            margin:0;
+            padding-left:5px;
+            padding-right: 5px;
+                 
+        }
+            
+        .cookies{
+            font-size:40px;
+            margin:15px;    
+        }
+        .menu-cards{
+            padding:10px;
+        }
+        .contact-container {
+            padding: 10px; /* Less padding for very small screens */
+            align-items: center;
+        }
+        table{
+            th{
+                font-size:20px;
+                width: 50%;
+            }
+            td{
+                font-size: 15px;
+                width:50%;
+            }
+        }
+    }

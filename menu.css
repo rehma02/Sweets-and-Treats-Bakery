@@ -1,0 +1,326 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(240, 170, 203);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+    .navbar{
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, rgb(240, 164, 206), white);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: Tahoma, serif;
+        z-index: 1000;
+        position: fixed;
+        
+    }
+    .nav-content {
+        display: block;
+        justify-content: center;
+        padding: 14px 16px;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+    }
+    .nav-content:hover{
+        opacity: 0.5s;
+        text-decoration: underline;
+        transition: 0.5s;
+        color: white;
+        
+    }
+    .section1{
+        height:600px;
+        width:100%;
+        background-image: url("images/desserts.jpg");
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        min-height:100%;
+        justify-content: center;
+        filter: opacity(85%);
+    }
+    h1{
+        color: rgb(245, 20, 151);
+        font-size: 100px;
+        text-decoration: underline;
+        text-align: center;
+        filter: opacity(100%);
+        margin-left: 80px;
+        margin-right:80px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .description {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        color: rgb(245, 6, 145);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        filter: opacity(90%);
+        margin-top:150px;
+        height:100px;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .baked-goods{
+        width:100%;
+        text-align: center;
+        font-size: 50px;
+        color:rgb(86, 59, 59);
+        margin:20px;
+        
+    }
+    .menu-cards{
+        background: linear-gradient(90deg, rgb(237, 64, 165), white);
+        width: 300px;
+        height: 430px;
+        margin: 10px;
+        border-radius: 15px;
+        backface-visibility: hidden;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding:10px;
+    }
+
+    .card-image{
+        height: 300px;
+        background-position: center;
+        margin-bottom: 10px;
+        background-size: cover;
+        border-radius: 15px;
+        width: 100%;    
+    }
+
+    .menu-cards h2{
+        margin:0;
+        padding:0;
+        width:100%;
+        text-align: center;   
+    }
+
+    .menu-cards p{
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .menu-cards:hover{
+        transform: scale(1.03);
+        transition: all 1s ease;
+        cursor: pointer;
+        box-shadow: 10px 5px 10px rgb(97, 96, 96);
+    }
+
+    .button{
+        margin:0 auto;
+        justify-content: center;
+        padding:5px 20px;
+        text-align: center;
+        border-radius: 15px;
+        border:none;
+        display: block;
+        box-sizing: border-box;
+        background-color: rgb(231, 20, 147);
+        text-decoration: none;
+        position: relative;
+        font-weight: 600;
+        color: white;
+        width: 50%;
+        height:30px;
+        cursor:pointer;    
+    }
+    .link{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(231, 20, 147);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        width:50%;
+        justify-content: center;
+    }
+
+    .button:hover{
+        background-color: white;
+        color:rgb(231, 20, 154);
+        transition: 0.5s;
+    }
+
+    .cookies{
+        background-image: url("images/choc-chip-cookie.jpg");
+    }
+    .cakes{
+        background-image: url("images/black-forest-cake.jpg");
+    }
+    .muffins{
+        background-image: url("images/blueberry-muffin.jpg");
+    }
+    .pastries{
+        background-image: url("images/puff_pastry.jpg");
+    }
+    .section3{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .sandwiches{
+        width:100%;
+        text-align: center;
+        font-size: 50px;
+        margin:20px;
+        color:rgb(41, 110, 30);
+    }
+    .chicken-sandwich{
+        background-image: url("images/chicken-sandwich.jpg");
+    }
+    .turkey-sandwich{
+        background-image: url("images/turkey-sandwich.jpg");
+    }
+    .egg-sandwich{
+        background-image: url("images/egg-sandwich.jpg");
+    }
+    .veggie-sandwich{
+        background-image: url("images/veggie\ sandwich.jpg");
+    }
+    
+    .section4{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .beverages{
+        width:100%;
+        text-align: center;
+        font-size: 50px;
+        color:rgb(90, 26, 36);
+        margin:20px;
+    }
+    .coffee{
+        background-image: url("images/coffee.jpg");
+    }
+    .latte{
+        background-image: url("images/latte.jpg");
+    }
+    .cappuccino{
+        background-image: url("images/cappuccino.webp");
+    }
+    .hot-chocolate{
+        background-image: url("images/hot-choc.jpg");
+    }
+
+    .contact-container{
+        width:100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        overflow: hidden;
+        background-color: rgb(138, 91, 91);
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    table{
+        th{
+            font-size:25px;
+            text-decoration: underline;
+            width:50%;
+        }
+        td{
+            font-size: 18px;
+            padding:5px;
+            width:50%;
+        }
+        
+    }
+    
+    @media screen and (max-width: 768px) {
+        h1{
+            font-size:80px;
+        }
+        .description {
+            font-size: 20px; /* Smaller font size for smaller screens */
+            margin: 0px; /* Smaller margins for smaller screens */
+            height: 75px;
+        }
+        .baked-goods{
+            font-size:40px;
+            margin:15px;
+        }
+        .sandwiches{
+            font-size: 40px;
+            margin:15px;
+        }
+        
+    }
+    
+    @media screen and (max-width: 480px) {
+        h1{
+            font-size:80px;
+        }
+        .nav-content{
+            font-size:15px;
+            margin:0;
+            padding-left:5px;
+            padding-right: 5px;
+            
+        }
+        .description {
+            font-size: 16px; /* Even smaller font size for very small screens */
+            margin: 5px; /* Even smaller margins for very small screens */
+            height:60px;       
+        }
+        .baked-goods{
+            font-size:40px;
+            margin:15px;
+            
+        }
+        .sandwiches{
+            font-size:40px;
+            margin:15px;
+        }
+        
+        .menu-cards{
+            padding:10px;
+        }
+        .contact-container {
+            padding: 10px; /* Less padding for very small screens */
+            align-items: center;
+        }
+        table{
+            th{
+                font-size:20px;
+                width: 50%;
+            }
+            td{
+                font-size: 15px;
+                width:50%;
+            }
+        }
+    
+        
+    }
