@@ -48,7 +48,6 @@ body{
     h1{
         color: rgb(245, 20, 151);
         font-size: 100px;
-        text-decoration: underline;
         text-align: center;
         filter: opacity(100%);
         margin-left: 80px;
